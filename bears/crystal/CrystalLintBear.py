@@ -16,7 +16,9 @@ class CrystalLintBear:
     code smells and wrong code constructions.
     """
     LANGUAGE = {'Crystal'}
-    REQUIREMENTS = {DistributionRequirement(brew='ameba')}
+    REQUIREMENTS = {DistributionRequirement(brew='crystal'),
+                    DistributionRequirement(brew='crystal-lang'),
+                    DistributionRequirement(brew='ameba')}
     AUTHORS = {'The coala developers'}
     AUTHORS_EMAILS = {'coala-devel@googlegroups.com'}
     LICENSE = 'AGPL-3.0'
